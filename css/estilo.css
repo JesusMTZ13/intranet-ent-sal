@@ -1,0 +1,34 @@
+body{
+ background-color: white;
+}
+.nav-link{
+    color: red;
+}
+.nav-item dropdown{
+    color: red;
+}
+h3{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.jumbotron{
+
+    margin: 0;
+    
+}
+.dropdown-menu a{
+    color: red;
+}
+.form-row{
+    
+    margin-top: 10%;
+    margin-left: 25%;
+}
+.serie{
+    margin-left: 25%;
+}
+.btn-guardar{
+margin-left: 65%;
+
+}
