@@ -2,14 +2,12 @@
     include "./conexion.php";
     $reloj =$_POST['reloj'];
     $pass =$_POST['pass'];
-    $res =$conexion -> query(
-        "select * from usuarios where reloj='$reloj'
-        and password='".sha1($pass)."' "
-    )or die($conexion->error);
+    $res =$conexion -> query("select * from usuarios where reloj='$reloj' and password='".sha1($pass)."' ")
+    or die($conexion->error);
 
-    if(mysqli_num_rows($res) >0 ){
+    if ( mysqli_num_rows($res) >0 ){
 
-    }else{
+    } else {
         echo "Login incorrecto";
     }
     
